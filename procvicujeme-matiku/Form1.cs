@@ -17,8 +17,12 @@ namespace procvicujeme_matiku
         {
             InitializeComponent();
 
+            Random random = new Random();
+
             // Example data: label names
-            string[] questions = { "Name:", "Age:", "Email:", "Phone:" };
+            string[] questions = {};
+
+            for (int i = 0; i < 5; i++) questions.Append(random.Next(-10, 10) + { random.Next(-10, 10)})
 
             int startXLabel = 20;  // X position for labels
             int startXTextbox = 120; // X position for textboxes
